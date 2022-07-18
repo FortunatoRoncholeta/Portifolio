@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Prociono&display=swap');
 
 
 html,body{
-    font-family: Prociono,Arial;
+    font-family: Domine,Arial;
     width: 100%;
     height: 100%;
 }
