@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -6,79 +7,90 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Kaushan+Script&family=Poppins:wght@100;400;600&display=swap');
+:root{
+    --fonte_principal:;
+    --fonte_segundaria:;
 
-/*
-font-family: 'Aboreto', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Poppins', sans-serif;
-*/
+    --cor0:#19191965;
+    --cor1:#00ff1e71;
+    
+}
 
-body {
+header{
+    
+}
+h1{
+    display: inline;
+    font-size: 3em;
+    margin-left: 100px;
+    
+}
+body{
 
-    color: #195e63;
-    font-size: 20px;
+    background-image: url(img/pexels-mark-daleman-250650.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20pt;
-}
 
-/*aside*/
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background: transparent;
-    width: 400px;
-    z-index: 1;
-    border: solid black;
-    border-radius: 20px;
-    /*background-color: #0d1f7b;*/
-
-}
-
-#img {
-    margin-top: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 340px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-
-h1 {
-    font-size: 35px;
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
+main{
+    background-color:var(--cor0);
+    
+    min-width: 320px;
+    max-width: 1000px;
+    margin:auto;
+    margin-top: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.405);
     text-align: center;
 }
 
+
 a {
+    display: inline-block;
     color: rgb(0, 0, 0);
-    font-size: 20pt;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+    font-size: 2em;
+    border: solid #000000;
+    width: 500px;
+    margin: 8px;
     padding: 10px;
-    border: solid #30b3e3;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 a:hover {
-    background-color: #00ffaa;
+    background-color:var(--cor1);
     color: #ffffff;
 }
 
+footer{
+    font-size: 1.2em;
+    background-color: #ffffff65;
+    max-width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+      
+}
+@media (max-width: 600px) {
 
-#conteudo {
-    margin-top: 100px;
-    margin-right: 100px;
-    margin-left: 500px;
+    main{
+        margin-top: 30px;
+    }
 
+    
+    h1{
+        margin-left: 30px;  
+    } 
+    
+    a {
+        width: 400px;  
+        
+    }
+
+   
 }
