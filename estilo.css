@@ -49,15 +49,21 @@ a{
 
 #titulo{
     font-size: 3em;
+    width: 80%;
     background-color: var(--cor0);
     letter-spacing: 10px;
     text-transform: uppercase;
     text-align: center;
+    border-radius: 15px;
+   
+    
+
 }
 
 .container{
     font-size: 2em;
     padding: 60px;
+  
 }
 
 
@@ -71,7 +77,9 @@ a{
    
 }
 #container-1{   
-    background-image: url(img/foto1.jpg);   
+    background-image: url(img/foto1.jpg); 
+    display: flex;
+    align-items: center;
 }
 
 #container-2{   
