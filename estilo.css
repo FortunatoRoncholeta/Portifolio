@@ -3,34 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 :root{
     --fonte_principal:;
     --fonte_segundaria:;
 
-    --cor0:#19191965;
-    --cor1:#00ff1e71;
-    
+    --cor0:#19191979;
+    --cor1:#000000bb;  
 }
 
 
 html, body{
     height: 100vh;
     margin: 0;
-    padding: 0;
-   
+    padding: 0;  
 }
-
 
 li{
     list-style: none;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none; 
 }
 
  /*==============================*/
@@ -46,7 +41,6 @@ a{
     padding: 20px;
 }
 
-
 #titulo{
     font-size: 3em;
     width: 80%;
@@ -55,31 +49,44 @@ a{
     text-transform: uppercase;
     text-align: center;
     border-radius: 15px;
-   
-    
+}
 
+.links {
+    display: flex;
+    gap: 10px; /*Espaçamento dos links*/
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-left: 40px;
+    text-transform: uppercase;   
+}
+.links a{
+    color: var(--cor0);
+    padding: 10px;
+}
+
+.links a:hover{
+    color: var(--cor1);
 }
 
 .container{
     font-size: 2em;
-    padding: 60px;
-  
+    padding: 60px; 
 }
 
-
 #container-1, #container-2, #container-3, #container-4{
-    height: 100vh;
-    position: relative;
+    height: 100vh;  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-   
+    background-attachment: fixed;   
 }
-#container-1{   
+
+#container-1{  /*container do Titulo*/ 
     background-image: url(img/foto1.jpg); 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #container-2{   
@@ -89,3 +96,4 @@ a{
 #container-3{   
     background-image: url(img/foto3.jpg);   
 }
+
