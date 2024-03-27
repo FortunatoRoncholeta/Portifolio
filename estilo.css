@@ -51,6 +51,19 @@ a{
     border-radius: 15px;
 }
 
+
+
+
+#foto img{
+    border-radius: 50%;
+    width: 25%;
+}
+#texto p{
+   
+}
+
+
+
 .links {
     display: flex;
     gap: 10px; /*Espaçamento dos links*/
