@@ -13,7 +13,6 @@
     --cor1:#000000bb;  
 }
 
-
 html, body{
     height: 100vh;
     margin: 0;
@@ -28,62 +27,33 @@ a{
     text-decoration: none; 
 }
 
- /*==============================*/
+footer {
+    font-size: 1.1em;
+    padding: 1px;
+}
 
- #quadro{
-    display: flex;
-    justify-content: space-between;
+footer p{
+    background-color: var(--cor0);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 30%;
+}
+
+
+ /*==========================================*/
+
+ /*=============Container=================*/
+
+
+
+ .container{
+
  }
 
-#li-esq, #li-dir{
-    border: 2px solid black;
-    width: 50%;
-    padding: 20px;
-}
-
-#titulo{
-    font-size: 3em;
-    width: 80%;
-    background-color: var(--cor0);
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 15px;
-}
-
-
-
-
-#foto img{
-    border-radius: 50%;
-    width: 25%;
-}
-#texto p{
-   
-}
-
-
-
-.links {
+.container #perfil{ /* Especifico do perfil*/
     display: flex;
-    gap: 10px; /*Espaçamento dos links*/
-    font-size: 1.1em;
-    margin-top: 5px;
-    margin-left: 40px;
-    text-transform: uppercase;   
-}
-.links a{
-    color: var(--cor0);
-    padding: 10px;
-}
-
-.links a:hover{
-    color: var(--cor1);
-}
-
-.container{
-    font-size: 2em;
-    padding: 60px; 
+    align-items: center;
 }
 
 #container-1, #container-2, #container-3, #container-4{
@@ -110,3 +80,59 @@ a{
     background-image: url(img/foto3.jpg);   
 }
 
+/*================capa principal=================*/
+ #titulo{
+    font-size: 3em;
+    width: 80%;
+    background-color: var(--cor0);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 10px; /*Espaçamento dos links*/
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-left: 40px;
+    text-transform: uppercase;   
+}
+.links a{
+    color: var(--cor0);
+    padding: 10px;
+}
+
+.links a:hover{
+    color: var(--cor1);
+}
+
+ /*=======================Perfil=======================*/
+
+ #foto {
+    border-radius: 50%;
+    width: 25%;
+    padding: 10px;
+    margin: 0px; 
+}
+
+#texto p{
+    text-align: justify;
+    margin: 10px; 
+    font-size: 2em;
+ }
+
+ /*===========Quadro=============*/
+
+#li-esq, #li-dir{
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#quadro{
+   display: flex;
+   font-size: 2em;
+
+ }
