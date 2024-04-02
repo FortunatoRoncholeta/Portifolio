@@ -3,94 +3,142 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 :root{
     --fonte_principal:;
     --fonte_segundaria:;
 
-    --cor0:#19191965;
-    --cor1:#00ff1e71;
-    
+    --cor0:#19191979;
+    --cor1:#000000bb;  
 }
 
-header{
-    
+html, body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;  
 }
-h1{
-    display: inline;
-    font-size: 3em;
-    margin-left: 100px;
-    
-}
-body{
 
-    background-image: url(img/pexels-mark-daleman-250650.jpg);
-    background-repeat: no-repeat;
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none; 
+}
+
+footer {
+    font-size: 1.1em;
+    padding: 1px;
+}
+
+footer p{
+    background-color: var(--cor0);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 30%;
+}
+
+ /*====================================================*/
+
+ /*=============Container=================*/
+
+ .container{
+  background-image: url(img/fundo3.jpg);
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center;
+
+
+ }
+
+
+.container #perfil{ /* Especifico do perfil*/
+    display: flex;
+    align-items: center;
+    background: rgb(92,103,105);
+    background: linear-gradient(to bottom, rgba(48,90,98,1) 0%, rgba(0,32,36,0.9808298319327731) 51%, rgba(106,196,196,1) 100%);
+}
+
+#container-1, #container-2, #container-3, #container-4{
+    height: 100vh;  
     background-position: center;
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
 }
 
+#container-1{  /*container do Titulo*/ 
+    background-image: url(img/foto1.jpg); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
-main{
-    background-color:var(--cor0);
+#container-2{   
+    background-image: url(img/foto3.jpg);   
+}
+
+#container-3{   
+    background-image: url(img/foto2.jpg);   
+}
+
+/*================capa principal=================*/
+ #titulo{
+    font-size: 3em;
+    width: 80%;
+    background-color: var(--cor0);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 10px; /*Espaçamento dos links*/
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-left: 40px;
+    text-transform: uppercase;   
+}
+.links a{
+    color: var(--cor0);
+    padding: 10px;
+}
+
+.links a:hover{
+    color: var(--cor1);
+}
+
+ /*=======================Perfil=======================*/
+
+ #foto {
+    border-radius: 50%;
+    width: 20%;
+    padding: 5px;
+    margin-left: 30px; 
     
-    min-width: 320px;
-    max-width: 1000px;
-    margin:auto;
-    margin-top: 150px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 60px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.405);
+}
+
+#texto p{
+    text-align: justify;
+    margin: 30px; 
+    font-size: 1.8em;
+ }
+
+ /*===========Quadro=============*/
+
+#li-esq, #li-dir{
+    width: 50%;
+    padding: 10px;
     text-align: center;
 }
 
+#quadro{
+   display: flex;
+   font-size: 2em;
 
-a {
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    font-size: 2em;
-    border: solid #000000;
-    width: 500px;
-    margin: 8px;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-a:hover {
-    background-color:var(--cor1);
-    color: #ffffff;
-}
-
-footer{
-    font-size: 1.2em;
-    background-color: #ffffff65;
-    max-width: 200px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-      
-}
-@media (max-width: 600px) {
-
-    main{
-        margin-top: 30px;
-    }
-
-    
-    h1{
-        margin-left: 30px;  
-    } 
-    
-    a {
-        width: 400px;  
-        
-    }
-
-   
-}
+ }
