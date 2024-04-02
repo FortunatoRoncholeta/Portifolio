@@ -40,20 +40,25 @@ footer p{
     width: 30%;
 }
 
-
- /*==========================================*/
+ /*====================================================*/
 
  /*=============Container=================*/
 
-
-
  .container{
+  background-image: url(img/fundo3.jpg);
+  background-repeat: no-repeat;  
+  background-size: cover;
+  background-position: center;
+
 
  }
+
 
 .container #perfil{ /* Especifico do perfil*/
     display: flex;
     align-items: center;
+    background: rgb(92,103,105);
+    background: linear-gradient(to bottom, rgba(48,90,98,1) 0%, rgba(0,32,36,0.9808298319327731) 51%, rgba(106,196,196,1) 100%);
 }
 
 #container-1, #container-2, #container-3, #container-4{
@@ -73,11 +78,11 @@ footer p{
 }
 
 #container-2{   
-    background-image: url(img/foto2.jpg);   
+    background-image: url(img/foto3.jpg);   
 }
 
 #container-3{   
-    background-image: url(img/foto3.jpg);   
+    background-image: url(img/foto2.jpg);   
 }
 
 /*================capa principal=================*/
@@ -112,15 +117,16 @@ footer p{
 
  #foto {
     border-radius: 50%;
-    width: 25%;
-    padding: 10px;
-    margin: 0px; 
+    width: 20%;
+    padding: 5px;
+    margin-left: 30px; 
+    
 }
 
 #texto p{
     text-align: justify;
-    margin: 10px; 
-    font-size: 2em;
+    margin: 30px; 
+    font-size: 1.8em;
  }
 
  /*===========Quadro=============*/
