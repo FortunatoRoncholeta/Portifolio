@@ -38,7 +38,7 @@ footer p{
     letter-spacing: 5px;
     text-transform: uppercase;
     border-radius: 15px;
-    width: 30%;
+    width: 28%;
 }
 
  /*====================================================*/
@@ -58,8 +58,6 @@ footer p{
 .container #perfil{ /* Especifico do perfil*/
     display: flex;
     align-items: center;
-    background: rgb(92,103,105);
-    background: linear-gradient(to bottom, rgba(48,90,98,1) 0%, rgba(0,32,36,0.9808298319327731) 51%, rgba(106,196,196,1) 100%);
 }
 
 #container-1, #container-2, #container-3, #container-4{
@@ -144,4 +142,6 @@ footer p{
 
  }
 
- /*Teste de git flow*/
+
+ /*Tentando finalizar a release 1.5 desse css*/
+
