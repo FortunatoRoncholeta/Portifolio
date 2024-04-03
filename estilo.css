@@ -7,16 +7,16 @@
 
 :root{
     --fonte_principal:sans serif;
-    --fonte_segundaria:;
 
-    --cor0:#19191979;
-    --cor1:#000000bb;  
+    --cor0:#19475675;
+    --cor1:#000000d5; 
+    
 }
 
 html, body{
-    height: 100vh;
-    margin: 0;
-    padding: 0;  
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 li{
@@ -32,7 +32,6 @@ footer {
     padding: 1px;
 }
 
-
 footer p{
     background-color: var(--cor0);
     letter-spacing: 5px;
@@ -46,18 +45,19 @@ footer p{
  /*=============Container=================*/
 
  .container{
-  background-image: url(img/fundo3.jpg);
-  background-repeat: no-repeat;  
-  background-size: cover;
-  background-position: center;
-
-
+    background-image: url(img/fundo3.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
-
 .container #perfil{ /* Especifico do perfil*/
-    display: flex;
+    width: 100%;
+    min-height: 300px;
+    justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
+    gap: 50px;
+    display: flex;
 }
 
 #container-1, #container-2, #container-3, #container-4{
@@ -65,7 +65,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;   
+    background-attachment: fixed;
 }
 
 #container-1{  /*container do Titulo*/ 
@@ -86,46 +86,56 @@ footer p{
 
 /*================capa principal=================*/
  #titulo{
-    font-size: 3em;
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 3.5rem;
+    color: #323240;
     width: 80%;
     background-color: var(--cor0);
     letter-spacing: 10px;
     text-transform: uppercase;
     text-align: center;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    user-select: none; /* Nao deixa ser selecionado*/
 }
 
 .links {
     display: flex;
     gap: 10px; /*Espaçamento dos links*/
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-top: 5px;
     margin-left: 40px;
-    text-transform: uppercase;   
+    text-transform: uppercase;  
+    user-select: none; /* Nao deixa ser selecionado*/ 
 }
 .links a{
-    color: var(--cor0);
+    color: #323240;
     padding: 10px;
 }
 
 .links a:hover{
-    color: var(--cor1);
+    color: var(--cor0);
+
 }
 
  /*=======================Perfil=======================*/
 
  #foto {
     border-radius: 50%;
-    width: 20%;
-    padding: 5px;
-    margin-left: 30px; 
-    
+    width: 250px;
+    height: 250px;
+}
+
+#texto{
+    max-width: 640px;
 }
 
 #texto p{
     text-align: justify;
-    margin: 30px; 
-    font-size: 1.8em;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--cor1);
  }
 
  /*===========Quadro=============*/
@@ -142,6 +152,4 @@ footer p{
 
  }
 
-
- /*Tentando finalizar a release 1.5 desse css*/
 
